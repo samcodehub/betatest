@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="matplot.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Matplotlib Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+            
+                
+                <div class="col-9 mt-5">
+                  <h1 class="mt-3">What is Matplotlib in Python programming language?</h1>
+<p class="mt-5">Matplotlib is a popular data visualization library in Python. It provides a wide range of tools for creating various types of plots, graphs, and charts for data visualization. With Matplotlib, you can create visualizations ranging from simple line plots to complex heatmaps and 3D plots.</p>
+<p class="mt-4">Matplotlib was originally created by John D. Hunter in 2003, and it is now one of the most widely used data visualization libraries in Python. It is open-source and available for free, making it accessible to developers and researchers around the world.</p>
+<p class="mt-4">Matplotlib can be used in various contexts, including scientific research, data analysis, and machine learning. It provides a range of customization options to allow users to tailor their visualizations to their specific needs. Matplotlib can also be used with other libraries, such as NumPy and Pandas, to create powerful data analysis and visualization workflows.</p>
+<p class="mt-4">Overall, Matplotlib is a powerful and flexible tool for data visualization in Python, and it has become an essential component of the Python data science ecosystem.</p>
+
+
+
+<div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<h2 class="mt-5">How to install and use Matplotlib in Python?</h2>
+<p class="mt-5">You can install Matplotlib in Python and use it for data visualization by following these steps:</p>
+<ol class="mt-4">
+  <li class="mt-3">Install Matplotlib using pip: Open your terminal or command prompt and run the following command to install Matplotlib:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install matplotlib                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+  <li class="mt-3">Import the Matplotlib module: After installing Matplotlib, you can import it in your Python code by adding the following line at the top of your script:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import matplotlib.pyplot as plt                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+  <li class="mt-3">Create a simple plot: To create a simple line plot, you can use the plot function in Matplotlib. Here is an example code to create a simple line plot:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import matplotlib.pyplot as plt
+
+# Create some data
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+  
+# Plot the data
+plt.plot(x, y)
+  
+# Add labels and title
+plt.xlabel('X-axis label')
+plt.ylabel('Y-axis label')
+plt.title('A simple line plot')
+  
+# Show the plot
+plt.show()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+    <p class="mt-4">This code will create a simple line plot with the x-axis labeled as "X-axis label", y-axis labeled as "Y-axis label", and the title of the plot set as "A simple line plot". When you run this code, it will display the plot in a separate window.</p>
+
+  <li class="mt-3">Customize your plot: Matplotlib provides a wide range of customization options to help you tailor your plot to your specific needs. For example, you can change the line style, color, and width, add markers to the plot, and modify the axes and legend. The Matplotlib documentation provides a detailed guide on the available customization options.</li>
+</ol>
+<p class="mt-4">With these steps, you can install and use Matplotlib in Python to create various types of plots and charts for data visualization.</p>
+
+
+
+<div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<h2 class="mt-5">What are the basic commands in Matplotlib?</h2>
+<p class="mt-4">Here are some of the basic commands in Matplotlib:</p>
+
+<ol class="mt-4">
+  <li class="mt-3">Importing Matplotlib: The first step is to import the library using the following command:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import matplotlib.pyplot as plt                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+ 
+  <li class="mt-3">Creating a Figure and Axis: You need to create a Figure and Axis object to begin plotting. The Figure object is the overall container for the plot, while the Axis object represents the actual plot area. You can create these objects using the following command:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">fig, ax = plt.subplots()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  <li class="mt-3">Plotting Data: Once you have created the Figure and Axis objects, you can start plotting data using various commands such as <mark><strong>'plot()'</strong></mark>, <mark><strong>'scatter()'</strong></mark>, <mark><strong>'bar()'</strong></mark>, <mark><strong>'hist()'</strong></mark>, etc.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">ax.plot(x, y) # plotting a line graph
+ax.scatter(x, y) # plotting a scatter plot
+ax.bar(x, y) # plotting a bar chart
+ax.hist(x) # plotting a histogram                         
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  <li class="mt-3">Customizing the Plot: Matplotlib provides a lot of customization options to make your plots more appealing. Some of the commonly used customization commands are <mark><strong>'xlabel()'</strong></mark>, <mark><strong>'ylabel()'</strong></mark>, <mark><strong>'title()'</strong></mark>, <mark><strong>'legend()'</strong></mark>, <mark><strong>'xlim()'</strong></mark>, <mark><strong>'ylim()'</strong></mark>, <mark><strong>'grid()'</strong></mark>, etc.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">ax.set_xlabel('X label') # set the x-axis label
+ax.set_ylabel('Y label') # set the y-axis label
+ax.set_title('Title') # set the plot title
+ax.legend(['line 1', 'line 2']) # set the legend
+ax.set_xlim([0, 10]) # set the x-axis limits
+ax.set_ylim([0, 5]) # set the y-axis limits
+ax.grid(True) # enable grid lines                         
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  <li class="mt-3">Saving the Plot: Once you are satisfied with your plot, you can save it using the <mark><strong>'savefig()'</strong></mark> command.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># save the plot as a PNG file
+plt.savefig('plot.png')                           
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+</ol>
+
+
+
+
+<div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<h2 class="mt-5">What are the advanced commands in Matplotlib?</h2>
+<p class="mt-4">Matplotlib is a very powerful data visualization library in Python with a lot of advanced features. Here are some of the advanced commands in Matplotlib:</p>
+<ol class="mt-4">
+  <li class="mt-3">Subplots: Matplotlib allows you to create multiple plots in the same figure using subplots. You can create a grid of plots with subplot() command, or using the subplots() command to create a figure and an array of subplots.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create a 2x2 grid of subplots
+fig, axes = plt.subplots(nrows=2, ncols=2)                           
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+
+  <li class="mt-3">Customizing the Appearance: Matplotlib provides a lot of advanced customization options to modify the appearance of your plot. You can change the colors, styles, markers, sizes, fonts, and many more.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">ax.plot(x, y, color='red', linestyle='--', marker='o',markersize=10, label='line 1')
+
+# set the x-axis ticks
+ax.set_xticks([0, 1, 2, 3])
+
+# set the x-axis tick labels
+ax.set_xticklabels(['A', 'B', 'C', 'D'])
+
+# set the tick label size
+ax.tick_params(axis='both', which='major', labelsize=12) 
+
+# set the plot background color
+ax.set_facecolor('gray')                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+
+  <li class="mt-3">Annotations: You can add text or annotations to your plot using the text() command. You can also add arrows, lines, and shapes using various commands such as arrow(), annotate(), axvline(), axhline(), rectangle(), etc.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># add text to the plot
+ax.text(0.5, 0.5, 'Hello World!', fontsize=18, ha='center', va='center') 
+
+# add an annotation with an arrow
+ax.annotate('Max Value', xy=(x_max, y_max), xytext=(x_max+1, y_max+1),
+arrowprops=dict(facecolor='black', shrink=0.05)) 
+
+# add a vertical line
+ax.axvline(x=2, color='gray', linestyle='--') 
+
+# add a horizontal line
+ax.axhline(y=5, color='gray', linestyle='--')
+
+# add a rectangle
+ax.add_patch(Rectangle((1, 1), 2, 3, facecolor='blue', alpha=0.2))                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+
+  <li class="mt-3">3D Plots: Matplotlib allows you to create 3D plots with the mplot3d toolkit. You can create various 3D plots such as surface plots, wireframe plots, scatter plots, and many more.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from mpl_toolkits import mplot3d
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# create a surface plot
+ax.plot_surface(X, Y, Z, cmap='viridis')                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+  <li class="mt-3">Animations: Matplotlib also provides support for creating animations. You can use the animation module to create animations that show how the data changes over time.</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import matplotlib.animation as animation
+
+def update(frame):
+  # update the data for the frame
+  ax.plot(x[:frame], y[:frame], color='red')
+  ax.set_xlim([0, frame])
+  ax.set_ylim([0, 10])
+  
+  ani = animation.FuncAnimation(fig, update, frames=10, interval=500)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+</ol>
+
+<p class="mt-4">These are just a few examples of the advanced features of Matplotlib. There are many more commands and options that can be used to create sophisticated and customized data visualizations.</p>
+
+
+<div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<!----------------- Comments...-------------- -->
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 rounded border border-5"></div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+  <!-- Section: Links -->
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+          </li>
+          <li>
+            <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+          </li>
+          <li>
+            <a href="../Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+          </li>
+          <li>
+            <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul  class="list-unstyled mb-0">
+          <li>
+            <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+          </li>
+          <li>
+            <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="matplot.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

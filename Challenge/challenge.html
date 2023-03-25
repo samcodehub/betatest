@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="challenge.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Coding Challenge</title>
+  </head>
+  <body>
+    <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+    
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 mt-5 rounded border border-5"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 quiz-container mt-5" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question text</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item mt-3 ">
+              <div class="form-check">
+                <input class="form-check-input answer" type="radio" name="answer" id="a">
+                <label class="form-check-label" for="a" id="a_text">Question</label>
+              </div>
+            </li>
+  
+            <li class="list-group-item">
+              <div class="form-check">
+                <input class="form-check-input answer" type="radio" name="answer" id="b">
+                <label class="form-check-label" for="b" id="b_text">Question</label>
+              </div>
+            </li>
+  
+            <li class="list-group-item">
+              <div class="form-check">
+                <input class="form-check-input answer" type="radio" name="answer" id="c">
+                <label class="form-check-label" for="c" id="c_text">Question</label>
+              </div>
+            </li>
+  
+            <li class="list-group-item">
+              <div class="form-check">
+                <input class="form-check-input answer" type="radio" name="answer" id="d">
+                <label class="form-check-label" for="d" id="d_text">Question</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="btn btn-primary bg-gradient w-100 mt-2" id="submit">Submit</button>
+      </div>
+      <div class="col-2 mt-5 rounded border border-5"></div>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+    <footer class="futer text-center text-white mt-5">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- tiktok -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- pinterest -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- tumblr -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+            ><i class="fab fa-tumblr"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+        <div class="text-center  text-success" id="newsletter-success"></div>
+        <div class="alert" style="display: none;">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+          Subscription successful!
+        </div>
+    <!-- Section: Form -->
+    <section class="">
+      <form id="contactForm2" >
+        
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="emailid" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+    <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+          </p>
+        </section>
+        <!-- Section: Text -->
+    
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+                </li>
+                <li>
+                  <a href="../Challenge/challenge.html"  class="text-white">Coding Challenge</a>
+                </li>
+                <li>
+                  <a href="../Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+                </li>
+                <li>
+                  <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <ul  class="list-unstyled mb-0">
+                <li>
+                  <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+                </li>
+                <li>
+                  <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+        © 2023 Copyright:
+        <a class="text-white" href="../main.html">samcodehub.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="challenge.js"></script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pywhatkit.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Pywhatkit library Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+           
+                
+                <div class="col-9 mt-5">
+                  <h1 class="mt-5">What is Python Pywhatkit library?</h1>
+                  <P class="mt-5">Pywhatkit is a Python library that provides a set of useful functions for performing various tasks. It is an open-source library that is easy to install and use. Pywhatkit can be used for a wide range of purposes, such as automation, web scraping, sending emails, and more.</P>
+                  <P class="mt-4">One of the main features of Pywhatkit is its ability to interact with web services such as Google, Wikipedia, and YouTube. It provides functions that make it easy to search for information on these services, as well as to download content from them.</P>
+                  <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                  <P class="mt-4">Here are some examples of what you can do with Pywhatkit:</P>
+                  <ul class="mt-4">
+                    <li class="mt-3">Send WhatsApp messages: Pywhatkit allows you to send WhatsApp messages to any number using Python code. You can even schedule messages to be sent at a specific time.</li>
+                    <li class="mt-3">Convert text to handwriting: With Pywhatkit, you can convert any text to an image of handwriting. This can be useful for creating personalized notes or cards.</li>
+                    <li class="mt-3">Search Google: Pywhatkit provides a function to search Google for a query and open the top search results in the browser.</li>
+                    <li class="mt-3">Play YouTube videos: You can use Pywhatkit to play YouTube videos directly in your Python code.</li>
+                    <li class="mt-3">Generate QR codes: Pywhatkit makes it easy to generate QR codes from any text.</li>
+                    <li class="mt-3">Get information from Wikipedia: Pywhatkit provides a function to search for information on Wikipedia and print the summary of the article.</li>
+                    <li class="mt-3">Send emails: Pywhatkit allows you to send emails using Python code, including HTML emails with attachments.</li>
+                </ul>
+                <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+
+
+                <h2 class="mt-5">How to install and use Pywhatkit?</h2>
+                <p class="mt-4"></p>
+                <ol class="mt-5">
+                  <li class="mt-3">Open a command prompt or terminal window.</li>
+                  <li class="mt-3">Run the following command to install Pywhatkit:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install pywhatkit                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                  <p class="mt-3">This will download and install Pywhatkit and its dependencies.</p>
+              </ol>
+              <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                <p class="mt-4">Once Pywhatkit is installed, you can start using its functions in your Python code. Here's an example of how to use some of Pywhatkit's functions:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pywhatkit as pw
+
+# Send a WhatsApp message
+pw.sendwhatmsg("+1234567890", "Hello, this is a test message!", 10, 15)
+
+# Convert text to handwriting
+pw.text_to_handwriting("This is a test message.")
+
+# Search Google for a query
+pw.search("Python Pywhatkit library")
+
+# Play a YouTube video
+pw.playonyt("Python tutorial")
+
+# Generate a QR code
+pw.generate_qr_code("https://www.google.com")
+
+# Get information from Wikipedia
+pw.info("Python programming language", lines=3)
+
+# Send an email
+pw.send_mail("example@example.com", "This is a test subject", "Hello, this is a test message!", "example@gmail.com", "password")
+                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                <p class="mt-4">This code uses some of Pywhatkit's functions to send a WhatsApp message, convert text to handwriting, search Google for a query, play a YouTube video, generate a QR code, get information from Wikipedia, and send an email.</p>
+                <p class="mt-4"><strong>*Note</strong> that some of the functions, such as sending a WhatsApp message and sending an email, require authentication and permission from the relevant services. Make sure to follow the necessary steps to authenticate and obtain permission before using these functions.</p>
+
+
+                <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<!----------------- Comments...-------------- -->
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 rounded border border-5"></div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+  <!-- Section: Links -->
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+          </li>
+          <li>
+            <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+          </li>
+          <li>
+            <a href="../Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+          </li>
+          <li>
+            <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul  class="list-unstyled mb-0">
+          <li>
+            <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+          </li>
+          <li>
+            <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="pywhatkit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

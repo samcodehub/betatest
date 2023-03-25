@@ -1,0 +1,173 @@
+body p{
+    font-size:18px;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*---------HAMBURGER MENU---------------*/
+.nav-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+  }
+.open-btn {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    color:#fff;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.nav.visible {
+    transform: translateX(0);
+  }
+.nav-black {
+    background-color: rgb(18, 17, 17);
+    width: 60%;
+    max-width: 480px;
+    min-width: 320px;
+    transition-delay: 0.4s;
+  }
+.nav-black.visible {
+    transition-delay: 0s;
+  }
+  
+.nav-purple {
+    background-color: rgb(44, 1, 62);
+    width: 95%;
+    transition-delay: 0.2s;
+  }
+.nav-red.visible {
+    transition-delay: 0.2s;
+  }
+.nav-white {
+    background-color: #fff;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    transition-delay: 0s;
+  }
+.nav-white.visible {
+    transition-delay: 0.4s;
+  }
+.close-btn {
+    opacity: 0.3;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+.list {
+    list-style-type: none;
+    padding: 0;
+  }
+.list li {
+    margin: 20px 0;
+  }
+  .list li a {
+    color: rgb(34, 31, 31);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.list li a:hover {
+  color: #1bbc9b;   
+}
+
+.list ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+.hover-underline-animation {
+    
+    position: relative;
+    color: #8a0275;
+  }
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8a0275;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.navbar{
+    overflow-x: hidden;
+    width:100%;
+    background: linear-gradient(60deg, rgb(56, 0, 32) 0%, rgb(13, 1, 62) 100%);
+    z-index: 10000000;
+  }
+  /*---------HAMBURGER MENU ENDS HERE---------------*/
+
+
+
+
+
+
+/*---------FOOTER---------------*/ 
+.futer{
+  background: linear-gradient(60deg, rgb(56, 0, 32) 0%, rgb(13, 1, 62) 100%);  
+}
+
+.list-unstyled a {
+  color: #dcdcdc;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.list-unstyled a:hover {
+  color: #1bbc9b !important;
+}
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+.instagram {
+  background-color: #f03805df;
+  color: #ffffff;
+}
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+.tiktok {
+  background-color: #000000;
+  color: #ffffff;
+}
+.apple {
+  background-color: #dcdcdc;
+  color: #ffffff;
+}
+
+
+.alert {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(33, 101, 35);
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+/*---------FOOTER ENDS HERE---------------*/
