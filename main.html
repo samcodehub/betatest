@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="icon" type="image/x-icon" href="img/s.png">
+    
+
+  <title>Sam-CodeHub</title>
+  
+
+</head>
+<body>
+  <div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+  </div>
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+   <!--HEADER-->
+   <nav class="navbar sticky-top ">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+    <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+             
+           
+  
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="navbar-brand text-white ms-5" href="#">SAMCODEHUB</a>
+    </div>
+  </nav>
+
+
+
+ <!--landing page-->
+  
+ <div id="lan" class="container-fluid  ">
+  
+  
+  <div class="d-flex justify-content-center align-items-center vh-100">
+   
+    <div class="text-center text-light">
+      <h1>Learn Python Programming</h1>
+      <h3 class="text-info mt-3 mb-3">By Doing Real Projects</h3>
+      <div class="input-group ">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for e.g Kivy" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="searchButton" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  
+        <div id="element-to-hide" class="row fixed-bottom mb-5 mt-5">
+          <div class="col-2">
+            <div class="middle">
+              <div class="mouse">
+            
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      
+       
+      
+
+    </div>
+  </div>
+
+  <!--landing page-->
+
+
+
+
+
+
+
+
+  <div id="searchResult" class="container-fluid   border-top border-5 border-bottom border-5">
+    
+    
+      <div id="timeline" class="row">
+        <div class="col-sm-3 border-end border-5 overflow-wrap bg-light">
+          <i class="fas fa-folder-open fa-fw mt-5"></i><span id="pl">Projects list</span> 
+          <ul class="side mt-3">
+            <li><a href="Kivy/Kivy.html" class="hover-underline-animation" target="_blank"><p>Python Kivy Projects</p></a></li>
+            <li><a href="Turtle/turtle.html" class="hover-underline-animation" target="_blank"><p>Python Turtle Graphic Projects</p></a></li>
+            <li><a href="Tkinter/tkinter.html" class="hover-underline-animation" target="_blank"><p>Python Tkinter Projects</p></a></li>
+            <li><a href="Game/game.html" class="hover-underline-animation" target="_blank"><p>Python Game Development Projects</p></a></li>
+            <li><a href="AI/ai.html" class="hover-underline-animation" target="_blank"><p>Python Artificial Intelligence Projects</p></a></li>
+            <li><a href="Databases/Database.html" class="hover-underline-animation" target="_blank"><p>Python Database Connection Projects</p></a></li>
+            <li><a href="Django/Django.html"  target="_blank" class="hover-underline-animation"><p>Python Django Framework</p></a></li>
+            <li><a href="Flask/flask.html"  target="_blank" class="hover-underline-animation"><p>Python Flask Framework</p></a></li>
+            <li><a href="Moviepy/moviepy.html" class="hover-underline-animation" target="_blank"><p>Python Moviepy Projects</p></a></li>
+            <li><a href="Terminal/terminal.html" class="hover-underline-animation" target="_blank"><p>Python Terminal Program Projects</p></a></li>
+            <li><a href="Bot/bot.html" class="hover-underline-animation" target="_blank"><p>Python Bot Projects</p></a></li>
+            <li><a href="Matplot/matplot.html" class="hover-underline-animation" target="_blank"><p>Python Matplotlib Projects</p></a></li>
+            <li><a href="Pyautogui/pyautogui.html" class="hover-underline-animation" target="_blank"><p>Python PyAutoGui Projects</p></a></li>
+            <li><a href="Pyqrcode/pyqrcode.html" class="hover-underline-animation" target="_blank"><p>Python PyQrCode Projects</p></a></li>
+            <li><a href="Selenium/selenium.html" class="hover-underline-animation" target="_blank"><p>Python Selenium Webdriver Projects</p></a></li>
+            <li><a href="Pywhatkit/pywhatkit.html" class="hover-underline-animation" target="_blank"><p>Python PyWhatKit Projects</p></a></li>
+            <li><a href="Pyfiglet/pyfiglet.html" class="hover-underline-animation" target="_blank"><p>Python PyFiglet Projects</p></a></li>
+            <li><a href="BS4/bs4.html" class="hover-underline-animation" target="_blank"><p>Python BS4(beautifulsoup) Projects</p></a></li>
+            <li><a href="Tkvideo/tkvideo.html" class="hover-underline-animation" target="_blank"><p>Python Tkvideo Projects</p></a></li>
+            <li><a href="GTTS/gtts.html" class="hover-underline-animation" target="_blank"><p>Python GTTS Library Projects</p></a></li>
+            <li><a href="URLLIB/urllib.html" class="hover-underline-animation" target="_blank"><p>Python Urllib.Request Projects</p></a></li>
+            <li><a href="TQDM/tqdm.html" class="hover-underline-animation" target="_blank"><p>Python TQDM Library Projects</p></a></li>
+            <li><a href="Pillow/pillow.html" class="hover-underline-animation" target="_blank"><p>Python PIL(pillow) Projects</p></a></li>
+            <li><a href="Pandas/pandas.html" class="hover-underline-animation" target="_blank"><p>Python Pandas Projects</p></a></li>
+            <li><a href="Cryptography/cryptography.html" class="hover-underline-animation" target="_blank"><p>Python Cryptography Projects</p></a></li>
+            <li><a href="Scipy/scipy.html" class="hover-underline-animation" target="_blank"><p>Python Scipy Library Projects</p></a></li>
+            <li><a href="SoundDevice/sounddevice.html" class="hover-underline-animation" target="_blank"><p>Python SoundDevice Library Projects</p></a></li>
+            <li><a href="Pafy/pafy.html" class="hover-underline-animation" target="_blank"><p>Python Pafy Library Projects</p></a></li>
+            <li><a href="Winsound/winsound.html" class="hover-underline-animation" target="_blank"><p>Python Winsound Module Projects</p></a></li>
+            <li><a href="Gzip/gzip.html" class="hover-underline-animation" target="_blank"><p>Python Gzip Module Projects</p></a></li>
+            <li><a href="Random/random.html" class="hover-underline-animation" target="_blank"><p>Python Random Module Projects</p></a></li>
+            <li><a href="Time/time.html" class="hover-underline-animation" target="_blank"><p>Python Time Module Projects</p></a></li>
+            <li><a href="OS/os.html" class="hover-underline-animation" target="_blank"><p>Python OS Module Projects</p></a></li>
+            <li><a href="Winapps/winapps.html" class="hover-underline-animation" target="_blank"><p>Python Winapps Library Projects</p></a></li>
+            <li><a href="PyTube/pytube.html" class="hover-underline-animation" target="_blank"><p>Python PyTube Library Projects</p></a></li>
+            <li><a href="Numpy/numpy.html" class="hover-underline-animation" target="_blank"><p>Python Numpy Library Projects</p></a></li>
+            <li><a href="SpeechRecognition/speechrecognition.html" class="hover-underline-animation" target="_blank"><p>Python Speech Recognition Projects</p></a></li>
+            <li><a href="Pyttsx3/pyttsx3.html" class="hover-underline-animation" target="_blank"><p>Python Pyttsx3 Library Projects</p></a></li>
+            <li><a href="Other/other.html" class="hover-underline-animation mb-5" target="_blank"><p>Python Other Libraries Projects</p></a></li>
+            
+          </ul>
+        </div>
+        <div id="timelin" class="col-sm-9 ">
+
+          <div class="row">
+            <div  class="col-sm-6 mt-5 ">
+              <div class="card  mb-5 text-center text-dark ">
+                <div class="card-body ">
+                  <h1 class="card-title ">Kivy Framework</h1>
+                  <p class="card-text">Kivy is an opensource multi-platform GUI development library for Python and can run on iOS, Android, Windows, OS X, and GNU/Linux.</p>
+                  <a href="Kivy/Kivy.html" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Kivy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mt-5">
+              <div class="card  mb-5  text-center ">
+                <div class="card-body">
+                  <h1 class="card-title">Turtle Graphics </h1>
+                  <p class="card-text">Python Turtle is a graphics library in Python that uses a cursor or "turtle" as the main shape that can be moved across the screen to produce drawings and images.</p>
+                  <a href="Turtle/turtle.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Turtle</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Tkinter Framework</h1>
+                  <p class="card-text">Tkinter is a cross-platform GUI framework that comes built into the Python standard library.</p>
+                  <a href="Tkinter/tkinter.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Tkinter</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Game development in Python</h1>
+                  <p class="card-text">Game development using the Python programming language involves using the language to write code that creates and runs video games.</p>
+                  <a href="Game/game.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Game development</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Artificial Intelligence in Python</h1>
+                  <p class="card-text">development and implementation of algorithms and models that enable machines to perform tasks that would typically require human intelligence, such as speech recognition, image classification, natural language processing, and decision-making.</p>
+                  <a href="AI/ai.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Artificial Intelligence</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">DataBases in Python</h1>
+                  <p class="card-text">There are many databases that can be used with the Python programming language. Some popular choices include :MySQL, PostgreSQL, SQLite...</p>
+                  <a href="Databases/Database.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn DataBase</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Python Django Framework</h1>
+                  <p class="card-text">Django is a high-level web framework for Python that follows the model-template-view (MTV) architectural pattern.</p>
+                  <a href="Django/Django.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Django</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Python Flask Framework</h1>
+                  <p class="card-text">Flask is a popular web application framework for Python. It allows developers to build web applications quickly and easily by providing a lightweight and modular approach to web development.</p>
+                  <a href="Flask/flask.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Flask</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Moviepy Library</h1>
+                  <p class="card-text">MoviePy is a Python library for video editing, which allows users to create, edit, and process videos using Python scripts. </p>
+                  <a href="Moviepy/moviepy.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Moviepy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Python Terminal Programming</h1>
+                  <p class="card-text">Terminal projects, also known as console projects or command-line projects, are software programs that are designed to run in a terminal or command-line interface (CLI) rather than a graphical user interface (GUI).</p>
+                  <a href="Terminal/terminal.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Terminal Programming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Python Bots</h1>
+                  <p class="card-text">A bot in Python programming is a software application that automates tasks and performs actions on behalf of a user.</p>
+                  <a href="Bot/bot.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Bots</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5 y text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Matplotlib Library</h1>
+                  <p class="card-text">Matplotlib is a popular data visualization library in Python. It provides a wide range of tools for creating various types of plots, graphs, and charts for data visualization.</p>
+                  <a href="Matplot/matplot.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Matplotlib</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PyAutoGui</h1>
+                  <p class="card-text">PyAutoGUI is essentially a Python package that works across Windows, MacOS X and Linux which provides the ability to simulate mouse cursor moves and clicks as well as keyboard button presses.</p>
+                  <a href="Pyautogui/pyautogui.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn PyAutoGui</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PyQrCode</h1>
+                  <p class="card-text">The pyqrcode module is a QR code generator that is simple to use and written in pure python. </p>
+                  <a href="Pyqrcode/pyqrcode.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn PyQrCode</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Selenium Webdriver</h1>
+                  <p class="card-text">Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly.</p>
+                  <a href="Selenium/selenium.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Selenium</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PyWhatKit</h1>
+                  <p class="card-text">PyWhatKit is a Python library with various helpful features. It's easy-to-use and does not require you to do any additional setup. Currently, it is one of the most popular library for WhatsApp and YouTube automation.</p>
+                  <a href="Pywhatkit/pywhatkit.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn PyWhatKit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PyFiglet</h1>
+                  <p class="card-text">The Pyfiglet module is a Python module that comes with many functions, and we can use these functions in a Python program to create fancy texts with large fonts & sizes in the output.</p>
+                  <a href="Pyfiglet/pyfiglet.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn PyFiglet</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mt-5">
+              <div class="card  mb-5  text-center ">
+                <div class="card-body">
+                  <h1 class="card-title">Python Pandas Library </h1>
+                  <p class="card-text">Pandas is a popular open-source data analysis and manipulation library for Python. It provides tools for data cleaning, transformation, and analysis, and is built on top of the NumPy library.</p>
+                  <a href="Pandas/pandas.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Pandas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">BS4(beautifulsoup)</h1>
+                  <p class="card-text">BeautifulSoup (usually abbreviated as bs4) is a popular Python library used for web scraping and parsing HTML and XML documents.</p>
+                  <a href="BS4/bs4.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn BeautifulSoup</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Tkvideo</h1>
+                  <p class="card-text">tkVideo is a Python module for playing videos in GUIs created with tkinter. </p>
+                  <a href="Tkvideo/tkvideo.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Tkvideo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">GTTS Library</h1>
+                  <p class="card-text">The Python GTTS (Google Text-to-Speech) library is a Python library that enables you to convert text into spoken words using Google's Text-to-Speech API.</p>
+                  <a href="GTTS/gtts.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn GTTS</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Urllib.Request</h1>
+                  <p class="card-text">The urllib.request module defines functions and classes which help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more.</p>
+                  <a href="URLLIB/urllib.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Urllib.Request</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">TQDM Library</h1>
+                  <p class="card-text">tqdm (taqadum) means progress, and it is used to create a smart progress bar for the loops.</p>
+                  <a href="TQDM/tqdm.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn TQDM</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PIL(pillow)</h1>
+                  <p class="card-text">Python pillow library is used to image class within it to show the image. The image modules that belong to the pillow package have a few inbuilt functions such as load images or create new images, etc.</p>
+                  <a href="Pillow/pillow.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn pillow</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Cryptography</h1>
+                  <p class="card-text">In Python, the 'cryptography' module provides a range of cryptographic services, such as symmetric encryption, asymmetric encryption, hashing, and digital signatures.</p>
+                  <a href="Cryptography/cryptography.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Cryptography</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Scipy Library</h1>
+                  <p class="card-text">The SciPy is an open-source scientific library of Python that is distributed under a BSD license. It is used to solve the complex scientific and mathematical problems. </p>
+                  <a href="Scipy/scipy.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Scipy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">SoundDevice Library</h1>
+                  <p class="card-text">Python-sounddevice “provides bindings for the PortAudio library and a few convenience functions to play and record NumPy arrays containing audio signals”.</p>
+                  <a href="SoundDevice/sounddevice.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn SoundDevice</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Pafy Library</h1>
+                  <p class="card-text">Pafy is a Python library to download YouTube content and retrieve metadata.</p>
+                  <a href="Pafy/pafy.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Pafy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Winsound Module</h1>
+                  <p class="card-text">The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. It includes functions and several constants.</p>
+                  <a href="Winsound/winsound.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Winsound</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Gzip Module</h1>
+                  <p class="card-text">In Python, the Gzip module provides a way to read and write gzip-compressed files, as well as to compress and decompress data in memory.</p>
+                  <a href="Gzip/gzip.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Gzip</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Random Module</h1>
+                  <p class="card-text">This module can be used to perform random actions such as generating random numbers, print random a value for a list or string, etc.</p>
+                  <a href="Random/random.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Random</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Time Module</h1>
+                  <p class="card-text">In Python, the time() function returns the number of seconds passed since epoch (the point where time begins).</p>
+                  <a href="Time/time.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Time</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">OS Module</h1>
+                  <p class="card-text">Python OS module provides the facility to establish the interaction between the user and the operating system.</p>
+                  <a href="OS/os.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn OS</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Winapps Library</h1>
+                  <p class="card-text">Python library for managing installed applications on Windows.</p>
+                  <a href="Winapps/winapps.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Winapps</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">PyTube Library</h1>
+                  <p class="card-text">pytube is a lightweight, dependency-free Python library which is used for downloading videos from the web.</p>
+                  <a href="PyTube/pytube.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn PyTube</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Numpy Library</h1>
+                  <p class="card-text">Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra ...</p>
+                  <a href="Numpy/numpy.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Numpy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Speech Recognition</h1>
+                  <p class="card-text">Speech recognition is a machine's ability to listen to spoken words and identify them. You can then use speech recognition in Python to convert the spoken words into text, make a query or give a reply. You can even program some devices to respond to these spoken words.</p>
+                  <a href="SpeechRecognition/speechrecognition.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Speech Recognition</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">Pyttsx3 Library</h1>
+                  <p class="card-text">pyttsx3 is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline and is compatible with both Python 2 and 3.</p>
+                  <a href="Pyttsx3/pyttsx3.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn Pyttsx3</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mb-5  text-center">
+                <div class="card-body">
+                  <h1 class="card-title">miscellaneous </h1>
+                  <p class="card-text">Python Turtle is a graphics library in Python that uses a cursor or "turtle" as the main shape that can be moved across the screen to produce drawings and images.</p>
+                  <a href="Other/other.html"  target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2">Learn More Libraries</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          
+
+
+
+
+
+          
+        </div>
+      </div>
+    
+    
+    
+  </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="futer text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- tiktok -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- pinterest -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- tumblr -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+            ><i class="fab fa-tumblr"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+        <div class="text-center  text-success" id="newsletter-success"></div>
+        <div class="alert" style="display: none;">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+          Subscription successful!
+        </div>
+    <!-- Section: Form -->
+    <section class="">
+      <form id="contactForm2" >
+        
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="emailid" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+    <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+          </p>
+        </section>
+        <!-- Section: Text -->
+    
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+                </li>
+                <li>
+                  <a href="Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+                </li>
+                <li>
+                  <a href="Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+                </li>
+                <li>
+                  <a href="About/about.html" target="_blank"  class="text-white">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <ul  class="list-unstyled mb-0">
+                <li>
+                  <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+                </li>
+                <li>
+                  <a href="Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+        © 2023 Copyright:
+        <a class="text-white" href="../main.html">samcodehub.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <script  src="main.js"></script>
+     
+</body>
+</html>

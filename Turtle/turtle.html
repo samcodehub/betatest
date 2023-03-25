@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="turtle.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Turtle Graphics Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+        <div class="container">
+            <div class="row">
+                
+                    
+                    <div class="col-9 mt-5">
+                      <h1 class="mt-3">What is Python Turtle Graphics?</h1>
+                       <p class="mt-5">
+                        Python Turtle is a graphics library in Python that uses a cursor or "turtle" as the main shape that can be moved across the screen to produce drawings and images. It provides a simple way for beginners to learn the basics of computer programming and develop logic and problem-solving skills. The turtle can be programmed to draw shapes, patterns, and images by controlling its movement and leaving a trail behind it.
+                       </p>
+
+
+
+                       <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                       <h2 class="mt-5">
+                        Advantages of using Python turtle graphics are :
+                        </h2>
+                        <ol class="mt-4">
+                            <li class="mt-3">Easy to learn: Python turtle graphics is a user-friendly library, making it easy to learn and understand, even for beginners.</li>
+                            <li class="mt-2">Interactive: Python turtle graphics allows for interactive graphics, making it an ideal tool for education and fun.</li>
+                            <li class="mt-2">Versatile: Python turtle graphics can be used to create a wide range of graphics, from simple shapes to complex images.</li>
+                            <li class="mt-2">Cross-platform: Python turtle graphics is compatible with multiple platforms, including Windows, Mac, and Linux.</li>
+                        </ol>
+
+
+
+                        <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                        <h2 class="mt-5">Disadvantages of using Python turtle graphics are :</h2>
+                        <ol class="mt-4">
+                            <li class="mt-2">Slow performance: Python turtle graphics is not the most efficient library, so it may run slowly for more complex graphics.</li>
+                            <li class="mt-2">Limited functionality: While Python turtle graphics can be used to create a wide range of graphics, its functionality is limited compared to more powerful libraries like Pygame or PyOpenGL.</li>
+                            <li class="mt-2">Not suitable for professional graphics: Python turtle graphics is not suitable for creating professional-quality graphics and is best used for educational and hobby purposes.</li>
+
+                        </ol>
+
+                       
+
+                        <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+
+                        <h2 class="mt-5">what are the basic command's of python turtle graphics code?</h2>
+                        <ol class="mt-4">
+                            <li class="mt-2">turtle.forward(distance) - moves the turtle forward by a specified distance</li>
+                            <li class="mt-2">turtle.backward(distance) - moves the turtle backward by a specified distance</li>
+                            <li class="mt-2">turtle.right(angle) - turns the turtle right by a specified angle</li>
+                            <li class="mt-2">turtle.left(angle) - turns the turtle left by a specified angle</li>
+                            <li class="mt-2">turtle.penup() - lifts the turtle's pen off the canvas, so it doesn't draw</li>
+                            <li class="mt-2">turtle.pendown() - lowers the turtle's pen onto the canvas, so it starts drawing again</li>
+                            <li class="mt-2">turtle.color(color) - sets the color of the turtle's pen</li>
+                            <li class="mt-2">turtle.begin_fill() - starts filling a shape drawn by the turtle</li>
+                            <li class="mt-2">turtle.end_fill() - ends filling a shape drawn by the turtle</li>
+                            <li class="mt-2">turtle.goto(x, y) - moves the turtle to a specified position on the canvas (x, y).</li>
+                        </ol>
+
+
+                        <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                        <h2 class="mt-5">what are the advanced command's of python turtle graphics code?</h2>
+                        <ol class="mt-4">
+                            <li class="mt-2">Changing Pen Color: You can change the color of the pen using the pencolor() method.</li>
+                            <li class="mt-2">Changing Pen Width: You can change the width of the pen using the pensize() method.</li>
+                            <li class="mt-2">Filling a Shape: You can fill a shape using the begin_fill() and end_fill() methods.</li>
+                            <li class="mt-2">Changing Background Color: You can change the background color using the bgcolor() method.</li>
+                            <li class="mt-2">Hiding/Showing the Turtle: You can hide or show the turtle using the hideturtle() and showturtle() methods.</li>
+                            <li class="mt-2">Setting the Screen Title: You can set the title of the screen using the title() method.</li>
+                            <li class="mt-2">Screen and Turtle Screen Methods: You can control the screen using methods like screensize() and bgpic(). The turtle screen also provides methods like colormode(), tracer(), and delay().</li>
+                            <li class="mt-2">Creating Custom Shapes: You can create custom shapes using the register_shape() method.</li>
+                            <li class="mt-2">Stamping the Turtle: You can stamp the turtle’s current position on the screen using the stamp() method.</li>
+                        </ol>
+
+                        <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                        <h3 class="mt-5">Do I need to install python turtle graphics?</h3>
+                        <p class="mt-4">No, you do not need to install Python Turtle Graphics. It is a built-in library in Python, so you can use it as soon as you have Python installed on your computer. To use it, you can simply import the turtle module in your Python code and start using its functions to draw graphics.</p>
+
+
+
+                        <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                        <h4 class="mt-4">how to have my first app in python turtle graphics?</h4>
+                        <p class="mt-4">To create your first app using Python Turtle Graphics, you can follow these steps:</p>
+
+                        <ol class="mt-4">
+                            <li class="mt-2">Import the turtle module: At the top of your Python script, add "import turtle".</li>
+                            <li class="mt-2">Create a turtle object: Create an instance of the Turtle class by running "t = turtle.Turtle()".</li>
+                            <li class="mt-2">Draw shapes: Use turtle methods such as "forward()", "left()", and "right()" to control the movement of the turtle and draw shapes.</li>
+                            <li class="mt-2">Control color and pen size: You can control the color of the turtle's pen by using the "pencolor()" method, and the size of the pen by using the "pensize()" method.</li>
+                            <li class="mt-2">Add loops and conditionals: You can use loops and conditionals to repeat actions or control the flow of your program.</li>
+                            <li class="mt-2">Call "turtle.done()" at the end of your program to prevent the turtle graphics window from closing automatically.</li>
+                           
+                        </ol>
+                        <p>Example code:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import turtle
+
+t = turtle.Turtle()
+  
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+  
+turtle.done()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                     
+                            <p>This code creates a turtle object and uses a for loop to draw a square.</p>
+
+
+
+  <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<!----------------- Comments...-------------- -->
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        <div id="ads" class="col-3 mt-5 rounded border border-5"></div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+            </li>
+            <li>
+              <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+            </li>
+            <li>
+              <a href="../Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+            </li>
+            <li>
+              <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+          <ul  class="list-unstyled mb-0">
+            <li>
+              <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+            </li>
+            <li>
+              <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="turtle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

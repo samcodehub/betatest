@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="speechrecognition.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Speech Recognition Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+            
+                
+                <div class="col-9 mt-5">
+                  <h1 class="mt-3">What is Speech Recognition in Python?</h1>
+                  <p class="mt-5">Speech recognition in Python is the ability to recognize and transcribe spoken language into text using computer algorithms. It involves processing audio signals and using machine learning models to identify and interpret the spoken words.</p>
+
+                  <p class="mt-4">Python provides several speech recognition libraries, such as:</p>
+                  <ol class="mt-4">
+                    <li class="mt-3">SpeechRecognition: A Python library that supports several popular speech recognition engines, such as Google Speech Recognition, Sphinx, and Wit.ai.</li>
+                    <li class="mt-3">PyAudio: A Python library that provides bindings for the PortAudio library, which is used for capturing and playing back audio streams.</li>
+                    <li class="mt-3">Google Cloud Speech-to-Text: A cloud-based speech recognition service provided by Google that can be accessed through a Python API.</li>
+                </ol>
+                  <p class="mt-4">Speech recognition is used in many applications, such as virtual assistants, speech-to-text transcription, and automated call center systems. With the growing popularity of smart speakers and voice-activated devices, speech recognition is becoming an increasingly important technology.</p>
+
+                  <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+
+
+
+                  <h2 class="mt-5">How to install and use SpeechRecognition library in Python?</h2>
+                  <p class="mt-5">You can install the SpeechRecognition library in Python using pip, which is the standard package manager for Python. Here are the steps to install and use SpeechRecognition in Python:</p>
+                  <ol class="mt-4">
+                    <li class="mt-3">Open a command prompt or terminal window.</li>
+                    <li class="mt-3">Type the following command to install the SpeechRecognition package:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install SpeechRecognition                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>  
+<p class="mt-3">This command will download and install the SpeechRecognition package and its dependencies.</p>                  
+                    <li class="mt-3">Once the SpeechRecognition package is installed, you can use it in your Python code. Here's an example of how to use SpeechRecognition to transcribe spoken language into text:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import speech_recognition as sr
+
+# Create a recognizer instance
+r = sr.Recognizer()
+
+# Open the microphone and capture audio
+with sr.Microphone() as source:
+    print("Speak something!")
+    audio = r.listen(source)
+
+# Recognize speech using Google Speech Recognition
+try:
+    text = r.recognize_google(audio)
+    print("You said: {}".format(text))
+except sr.UnknownValueError:
+    print("Sorry, I could not understand what you said.")
+except sr.RequestError as e:
+    print("Could not request results from Google Speech Recognition service; {0}".format(e))                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                </ol>
+                  <p class="mt-4">This code creates a <mark><strong>'Recognizer'</strong></mark> instance from the <mark><strong>'speech_recognition'</strong></mark> library, and then uses it to capture audio from the microphone using the <mark><strong>'Microphone'</strong></mark> class. It then passes the captured audio to the Google Speech Recognition engine using the <mark><strong>'recognize_google()'</strong></mark> method, which returns the transcribed text. Finally, it prints the transcribed text to the console.</p>
+
+                    <p class="mt-4"><strong>*Note</strong> that in this example, we use the Google Speech Recognition engine, but SpeechRecognition supports several other engines, such as Sphinx and Wit.ai. You can specify the engine you want to use by passing its name as an argument to the <mark><strong>'recognize_sphinx()'</strong></mark>, <mark><strong>'recognize_wit()'</strong></mark>, or <mark><strong>'recognize_google()'</strong></mark> methods.</p>
+
+                    <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+                    <h2 class="mt-5">How to install and use PyAudio in Python?</h2>
+                    <p class="mt-4">You can install the PyAudio library in Python using pip, which is the standard package manager for Python. Here are the steps to install and use PyAudio in Python:</p>
+                    <ol class="mt-4">
+                      <li class="mt-3">Open a command prompt or terminal window.</li>
+                      <li class="mt-3">Type the following command to install the PyAudio package:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install PyAudio                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">This command will download and install the PyAudio package and its dependencies.</p>
+                      <li class="mt-3">Once the PyAudio package is installed, you can use it in your Python code. Here's an example of how to use PyAudio to record audio from the microphone:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pyaudio
+import wave
+
+# Set up the audio parameters
+CHUNK = 1024
+FORMAT = pyaudio.paInt16
+CHANNELS = 1
+RATE = 44100
+RECORD_SECONDS = 5
+WAVE_OUTPUT_FILENAME = "output.wav"
+
+# Create an instance of the PyAudio class
+p = pyaudio.PyAudio()
+
+# Open the microphone and start recording
+stream = p.open(format=FORMAT,
+                channels=CHANNELS,
+                rate=RATE,
+                input=True,
+                frames_per_buffer=CHUNK)
+print("Recording...")
+
+frames = []
+
+for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+    data = stream.read(CHUNK)
+    frames.append(data)
+
+print("Finished recording.")
+
+# Stop recording and close the stream
+stream.stop_stream()
+stream.close()
+p.terminate()
+
+# Save the recorded audio to a WAV file
+wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+wf.setnchannels(CHANNELS)
+wf.setsampwidth(p.get_sample_size(FORMAT))
+wf.setframerate(RATE)
+wf.writeframes(b''.join(frames))
+wf.close()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                  </ol>
+
+
+                    <p class="mt-4">This code sets up the audio parameters, creates an instance of the PyAudio class, and opens the microphone for recording using the <mark><strong>'open()'</strong></mark> method. It then captures audio data in chunks using a <mark><strong>'for'</strong></mark> loop, and appends each chunk to a list of frames. Finally, it stops recording, closes the stream, and saves the recorded audio to a WAV file.</p>
+                    <p class="mt-4"><strong>*Note</strong> that in this example, we record audio for 5 seconds and save it to a file named <mark><strong>'"output.wav"'</strong></mark>, but you can adjust the <mark><strong>'RECORD_SECONDS'</strong></mark> and <mark><strong class="text-break">'WAVE_OUTPUT_FILENAME'</strong></mark> variables to customize the recording length and output file name.</p>
+
+
+                    <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+
+                    <h2 class="mt-5">What is Google Cloud Speech-to-Text and how to use it in Python?</h2>
+                    <p class="mt-4">Google Cloud Speech-to-Text is a service provided by Google Cloud Platform that allows developers to convert audio to text using powerful machine learning algorithms. This service can be used to transcribe speech from a variety of sources, including live audio streams, pre-recorded audio files, and telephone conversations.</p>
+                    <p class="mt-4">To use Google Cloud Speech-to-Text in Python, you can follow these steps:</p>
+                    <ol class="mt-4">
+                      <li class="mt-3">First, you need to create a project on Google Cloud Platform and enable the Speech-to-Text API. You also need to create a service account and download the JSON key file.</li>
+                      <li class="mt-3">Next, you need to install the <mark><strong>''</strong></mark>google-cloud-speech Python library using pip. You can do this by running the following command in your terminal:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install google-cloud-speech                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                      <li class="mt-3">Once you have the library installed, you can use the following Python code to transcribe an audio file:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from google.cloud import speech_v1
+from google.cloud.speech_v1 import enums
+
+client = speech_v1.SpeechClient()
+
+# The name of the audio file to transcribe
+file_name = 'path/to/audio/file'
+
+# The language of the audio file
+language_code = 'en-US'
+
+# Read the audio file
+with open(file_name, 'rb') as f:
+    content = f.read()
+
+# Configure the speech recognition request
+config = {
+    'language_code': language_code,
+}
+
+audio = {
+    'content': content,
+}
+
+# Perform the transcription
+response = client.recognize(config, audio)
+
+# Print the transcription
+for result in response.results:
+    print(result.alternatives[0].transcript)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                  </ol>
+                    <p class="mt-4">In this code, you first import the necessary libraries and create a <mark><strong>'SpeechClient'</strong></mark> object. You then specify the name and language of the audio file you want to transcribe, and read the file into memory. Next, you configure the speech recognition request by specifying the language code, and create an <mark><strong>'audio'</strong></mark> object that contains the audio data. Finally, you call the <mark><strong>'recognize'</strong></mark> method of the <mark><strong>'SpeechClient'</strong></mark> object to perform the transcription, and print the result.</p>
+                    <p class="mt-4"><strong>*Note</strong> that this is a basic example, and there are many other configuration options and parameters that you can use to customize the speech recognition process. You can refer to the official Google Cloud Speech-to-Text documentation for more information.</p>
+
+
+
+                    <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<!----------------- Comments...-------------- -->
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 rounded border border-5"></div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+  <!-- Section: Links -->
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+          </li>
+          <li>
+            <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+          </li>
+          <li>
+            <a href="../Donate/donate.html" target="_blank" class="text-white">Donate to us</a>
+          </li>
+          <li>
+            <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+        <ul  class="list-unstyled mb-0">
+          <li>
+            <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+          </li>
+          <li>
+            <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="speechrecognition.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
