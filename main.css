@@ -79,9 +79,7 @@ body {
     .content {
       height:30vh;
     }
-    h1 {
-      font-size:24px;
-    }
+  
 }
 /* ------------HEADER ENDS HERE-------------- */
 
@@ -98,6 +96,21 @@ body {
   height: 100vh;
   z-index: -100;
 }
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  #lan h1{
+    margin-top: -100px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-height: 320px) and (max-width: 576px) and (orientation: landscape) {
+  #lan h1 {
+    margin-top: -100px;
+    font-size: 24px;
+  }
+}
+
+
 /* ---------------LANDING PAGE ENDS HERE------------- */
 
 
@@ -260,6 +273,13 @@ body {
         top: 50px;
     }
   }
+  @media screen and (max-height: 320px) and (max-width: 576px) and (orientation: landscape) {
+    #lan h1 {
+      margin-top: -100px;
+      font-size: 24px;
+    }
+  }
+  
   /*---------SCROLL DOWN ENDS HERE---------------*/
 
 
@@ -284,14 +304,19 @@ body {
   
 @media screen and (min-width: 320px) and (max-width: 576px) {
     .col-sm-3 {
-      width: 40%;
+      width: 30%;
       
     }
     .col-sm-3 p{
       font-size: 14px;
+      border-bottom: 1px solid #1c1c1c;
+    }
+    #pl{
+      font-size: 16px;
+      
     }
     .col-sm-3 ul{
-      padding-left:0.5em;
+      padding-left:0px;
     }
     .col-sm-3 li{
       list-style-type:none ;
@@ -299,7 +324,7 @@ body {
     }
   
     .col-sm-9 {
-      width: 60%;
+      width: 70%;
     }
 }
 /*---------SIDE BAR LINKS ENDS HERE---------------*/
@@ -337,6 +362,9 @@ body {
     }
     .card a{
       font-size:14px;
+    }
+    .card h1{
+      font-size:20px;
     }
   }
 
