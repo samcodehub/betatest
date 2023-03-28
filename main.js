@@ -11,6 +11,36 @@ close_btn.addEventListener('click', () => {
     nav.forEach(nav_el => nav_el.classList.remove('visible'))
 })
 // ------------nav btn--------------------
+
+function sidebar(){
+  var sidb=document.getElementById("sb");
+  var btn=document.getElementById("BTN");
+  var btnn=document.getElementById("BTNn");
+  var btns=document.getElementById("BTNs");
+  var btne=document.getElementById("BTNe");
+      sidb.style.left="0";
+      btn.style.display="none";
+      btnn.style.display="block";
+      btns.style.display="none";
+      btne.style.display="block";
+      
+  
+}
+function sidebarr(){
+  var sidb=document.getElementById("sb");
+  var btn=document.getElementById("BTN");
+  var btnn=document.getElementById("BTNn");
+  var btns=document.getElementById("BTNs");
+  var btne=document.getElementById("BTNe");
+      sidb.style.left="-250px";
+      btn.style.display="block";
+      btnn.style.display="none";
+      btns.style.display="block";
+      btne.style.display="none";
+      
+  
+}
+
 //##################################################################################
 // Define the cards array before using it
 const cards = document.querySelectorAll('.card');
@@ -92,6 +122,8 @@ window.addEventListener('scroll', function() {
 });
 
 // -------------hide scroll down guide----------------
+
+
 //##################################################################################
 // Initialize Firebase for subscription
  const footerFirebaseConfig = {

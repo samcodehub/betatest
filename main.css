@@ -273,12 +273,7 @@ body {
         top: 50px;
     }
   }
-  @media screen and (max-height: 320px) and (max-width: 576px) and (orientation: landscape) {
-    #lan h1 {
-      margin-top: -100px;
-      font-size: 24px;
-    }
-  }
+  
   
   /*---------SCROLL DOWN ENDS HERE---------------*/
 
@@ -288,6 +283,7 @@ body {
 
 
 /*---------SIDEBAR LINKS---------------*/
+
 .side a{
     text-decoration: none;
     color: #1c1c1c;
@@ -296,37 +292,157 @@ body {
 .side a:hover {
     color: #1bbc9b;   
   }
-#pl{
-  font-weight: 500;
-  font-size: 1.2em;
-  padding-left: 5px;
-}
+
+.col-sm-3 i{
+  font-size: 3em;
   
+}  
 @media screen and (min-width: 320px) and (max-width: 576px) {
     .col-sm-3 {
-      width: 30%;
-      
+      width: 0%;
+      position: relative; 
+      background-color: #06060600!important;
     }
-    .col-sm-3 p{
-      font-size: 14px;
-      border-bottom: 1px solid #1c1c1c;
-    }
-    #pl{
-      font-size: 16px;
-      
-    }
-    .col-sm-3 ul{
-      padding-left:0px;
-    }
-    .col-sm-3 li{
-      list-style-type:none ;
-    
-    }
-  
+ 
     .col-sm-9 {
-      width: 70%;
+      width: 90%;
     }
 }
+
+
+.sb{
+  width:250px;
+  height:auto;
+  position:relative ;
+  top:10px;
+  left:-250px;
+  z-index: 99;
+  background: #f9f9f9;
+ box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+   inset 0 0 1px rgba(255, 255, 255, 0.6);
+/*  border-right:1px solid black;*/
+  transition:all 800ms ease;
+  box-shadow:2px 2px 5px grey;
+
+}
+.sec{
+  position:relative ;
+  top:30px;
+  padding-bottom: 30px;
+  left:1px;
+  width:95%;
+  height:auto;
+  word-wrap: break-word;
+  
+}
+.sec li a{
+  text-decoration:none;
+  font-size:20px;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:black;
+  width:100px;
+  }
+li a:hover{
+      color: #1bbc9b;
+      width:100%;
+  }
+#BTN{
+  position:absolute;
+  top:0px;
+  left:250px;
+  width:auto;
+  height:40px ;
+  background-color:grey;
+  border: 0 solid rgba(0,0,0,0);
+  text-align:center ;
+  text-transform:uppercase ;
+  border-radius:0px 40% 40% 0;
+  transition:all 1s ease;
+ 
+  animation:bli .3s linear alternate infinite ;
+  background: linear-gradient(90deg,        rgba(255, 255, 255, 0) 0%, 
+   rgba(255, 255, 255, 0.2) 25%, 
+   rgba(255, 255, 255, 0.2) 75%, 
+   rgba(255, 255, 255, 0) 100%);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+   inset 0 0 1px rgba(255, 255, 255, 0.6);}
+
+   #BTNs{
+    position:absolute;
+    top:0px;
+    left:250px;
+    width:auto;
+    height:100% ;
+    background-color:grey;
+    border: 0 solid rgba(0,0,0,0);
+    text-align:center ;
+    text-transform:uppercase ;
+    border-radius:0px 40% 40% 0;
+    transition:all 1s ease;
+    
+    animation:bli .3s linear alternate infinite ;
+    background: linear-gradient(90deg,        rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);}
+
+#BTN:hover{
+  background-color:red;
+}
+@keyframes bli{
+  0%{color:black;}
+  50%{color:blue;}
+  100% {color:red;}
+}
+#BTNn{
+  position:absolute;
+  top:0px;
+  left:250px;
+  
+  height:100px ;
+  background-color:grey;
+  border: 0 solid rgba(0,0,0,0);
+  text-align:center ;
+  text-transform:uppercase ;
+  border-radius:0 40% 40% 0px;
+  transition:all 500ms ease;
+  display:none;
+  font-size:3.5rem;
+  color:rgb(81, 1, 51);
+  z-index:100;
+   background: linear-gradient(90deg, 
+   rgba(255, 255, 255, 0) 0%, 
+   rgba(255, 255, 255, 0.2) 25%, 
+   rgba(255, 255, 255, 0.2) 75%, 
+   rgba(255, 255, 255, 0) 100%);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+   inset 0 0 1px rgba(255, 255, 255, 0.6);}
+
+   #BTNe{
+    position:absolute;
+    top:0px;
+    left:250px;
+    
+    height:100% ;
+    background-color:grey;
+    border: 0 solid rgba(0,0,0,0);
+    text-align:center ;
+    text-transform:uppercase ;
+    border-radius:0 40% 40% 0px;
+    transition:all 500ms ease;
+    display:none;
+    font-size:1.5rem;
+    color:red;
+    
+     background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);}
 /*---------SIDE BAR LINKS ENDS HERE---------------*/
 
 
