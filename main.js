@@ -11,7 +11,7 @@ close_btn.addEventListener('click', () => {
     nav.forEach(nav_el => nav_el.classList.remove('visible'))
 })
 // ------------nav btn--------------------
-
+//-------------side bar--------------------
 function sidebar(){
   var sidb=document.getElementById("sb");
   var btn=document.getElementById("BTN");
@@ -23,8 +23,6 @@ function sidebar(){
       btnn.style.display="block";
       btns.style.display="none";
       btne.style.display="block";
-      
-  
 }
 function sidebarr(){
   var sidb=document.getElementById("sb");
@@ -37,10 +35,7 @@ function sidebarr(){
       btnn.style.display="none";
       btns.style.display="block";
       btne.style.display="none";
-      
-  
 }
-
 //##################################################################################
 // Define the cards array before using it
 const cards = document.querySelectorAll('.card');

@@ -5,8 +5,6 @@ body {
     font-size:18px;
     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
-
 /*--------------HEADER----------------- */
 .header {
     position:fixed;
@@ -79,15 +77,8 @@ body {
     .content {
       height:30vh;
     }
-  
 }
 /* ------------HEADER ENDS HERE-------------- */
-
-
-
-
-
-
 /* ---------------LANDING PAGE------------- */
 #lan{
   display: flex;
@@ -102,20 +93,13 @@ body {
     font-size: 24px;
   }
 }
-
 @media screen and (max-height: 320px) and (max-width: 576px) and (orientation: landscape) {
   #lan h1 {
     margin-top: -100px;
     font-size: 24px;
   }
 }
-
-
 /* ---------------LANDING PAGE ENDS HERE------------- */
-
-
-
-
 /*---------HAMBURGER MENU---------------*/
 .nav-btn {
     border: none;
@@ -188,9 +172,7 @@ body {
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
-    
-}
-
+    }
 .list li a:hover {
   color: #1bbc9b;   
 }
@@ -227,13 +209,7 @@ body {
     z-index: 10000000;
   }
   /*---------HAMBURGER MENU ENDS HERE---------------*/
-  
-  
-  
-  
-  
-  
-/*---------SCROLL DOWN---------------*/  
+  /*---------SCROLL DOWN---------------*/  
   .middle {
     position: absolute;
     top: 90%;
@@ -241,7 +217,6 @@ body {
     transform: translate(-50%, -50%);
   }
   .mouse {
-    
     width: 40px;
     height: 80px;
     border: 4px solid #33333375;
@@ -273,22 +248,12 @@ body {
         top: 50px;
     }
   }
-  
-  
-  /*---------SCROLL DOWN ENDS HERE---------------*/
-
-
-
-
-
-
+/*---------SCROLL DOWN ENDS HERE---------------*/
 /*---------SIDEBAR LINKS---------------*/
-
 .side a{
     text-decoration: none;
     color: #1c1c1c;
-    
-  }
+    }
 .side a:hover {
     color: #1bbc9b;   
   }
@@ -308,8 +273,6 @@ body {
       width: 90%;
     }
 }
-
-
 .sb{
   width:250px;
   height:auto;
@@ -320,10 +283,8 @@ body {
   background: #f9f9f9;
  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
    inset 0 0 1px rgba(255, 255, 255, 0.6);
-/*  border-right:1px solid black;*/
   transition:all 800ms ease;
   box-shadow:2px 2px 5px grey;
-
 }
 .sec{
   position:relative ;
@@ -333,8 +294,7 @@ body {
   width:95%;
   height:auto;
   word-wrap: break-word;
-  
-}
+  }
 .sec li a{
   text-decoration:none;
   font-size:20px;
@@ -358,7 +318,8 @@ li a:hover{
   text-transform:uppercase ;
   border-radius:0px 40% 40% 0;
   transition:all 1s ease;
- 
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:500;
   animation:bli .3s linear alternate infinite ;
   background: linear-gradient(90deg,        rgba(255, 255, 255, 0) 0%, 
    rgba(255, 255, 255, 0.2) 25%, 
@@ -366,8 +327,7 @@ li a:hover{
    rgba(255, 255, 255, 0) 100%);
    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
    inset 0 0 1px rgba(255, 255, 255, 0.6);}
-
-   #BTNs{
+#BTNs{
     position:absolute;
     top:0px;
     left:250px;
@@ -379,7 +339,6 @@ li a:hover{
     text-transform:uppercase ;
     border-radius:0px 40% 40% 0;
     transition:all 1s ease;
-    
     animation:bli .3s linear alternate infinite ;
     background: linear-gradient(90deg,        rgba(255, 255, 255, 0) 0%, 
      rgba(255, 255, 255, 0.2) 25%, 
@@ -387,21 +346,17 @@ li a:hover{
      rgba(255, 255, 255, 0) 100%);
      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
      inset 0 0 1px rgba(255, 255, 255, 0.6);}
-
-#BTN:hover{
-  background-color:red;
-}
 @keyframes bli{
-  0%{color:black;}
-  50%{color:blue;}
-  100% {color:red;}
+  0%{color:white;}
+  50%{color:cyan;}
+  100% {color:purple;}
 }
 #BTNn{
   position:absolute;
   top:0px;
   left:250px;
-  
-  height:100px ;
+  height:90px ;
+  width:60px;
   background-color:grey;
   border: 0 solid rgba(0,0,0,0);
   text-align:center ;
@@ -409,7 +364,7 @@ li a:hover{
   border-radius:0 40% 40% 0px;
   transition:all 500ms ease;
   display:none;
-  font-size:3.5rem;
+  font-size:3rem;
   color:rgb(81, 1, 51);
   z-index:100;
    background: linear-gradient(90deg, 
@@ -419,12 +374,10 @@ li a:hover{
    rgba(255, 255, 255, 0) 100%);
    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
    inset 0 0 1px rgba(255, 255, 255, 0.6);}
-
-   #BTNe{
+#BTNe{
     position:absolute;
     top:0px;
     left:250px;
-    
     height:100% ;
     background-color:grey;
     border: 0 solid rgba(0,0,0,0);
@@ -434,9 +387,7 @@ li a:hover{
     transition:all 500ms ease;
     display:none;
     font-size:1.5rem;
-    color:red;
-    
-     background: linear-gradient(90deg, 
+    background: linear-gradient(90deg, 
      rgba(255, 255, 255, 0) 0%, 
      rgba(255, 255, 255, 0.2) 25%, 
      rgba(255, 255, 255, 0.2) 75%, 
@@ -444,12 +395,6 @@ li a:hover{
      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
      inset 0 0 1px rgba(255, 255, 255, 0.6);}
 /*---------SIDE BAR LINKS ENDS HERE---------------*/
-
-
-
-
-
-
 /*---------TIMELINE CARDS---------------*/
 .card {
     box-shadow: -5px 10px 9px 0px rgba(0,0,0,0.54);
@@ -477,24 +422,13 @@ li a:hover{
       font-size: 16px;
     }
     .card a{
-      font-size:14px;
+      font-size:16px;
     }
     .card h1{
       font-size:20px;
     }
   }
-
-  
 /*---------TIMELINE CARDS ENDS HERE---------------*/
-
-
-
-
-
-
-
-
-
 /*---------FOOTER---------------*/ 
 .futer{
   background: linear-gradient(60deg, rgb(56, 0, 32) 0%, rgb(13, 1, 62) 100%);  
