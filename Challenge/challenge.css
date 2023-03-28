@@ -170,14 +170,23 @@ body {
   }
   /*---------FOOTER ENDS HERE---------------*/
 
-@media screen and (min-width: 320px) and (max-width: 575px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
   .col-sm-2 {
-    width: 15%;
+    width: 10%;
     }
 
   .col-sm-8 {
-    width: 60%;
+    width: 80%;
     word-wrap:break-word;
+  
+  }
+  .col-sm-8 p{
+    font-size: 14px;
+  
+  }
+  .col-sm-8 h1{
+    font-size: 8px !important;
+  
   }
 }
 
