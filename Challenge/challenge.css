@@ -180,12 +180,12 @@ body {
     word-wrap:break-word;
   
   }
-  .col-sm-8 p{
+  .col-sm-8 li{
     font-size: 14px;
   
   }
-  .col-sm-8 h1{
-    font-size: 8px !important;
+  .col-sm-8 h2{
+    font-size: 18px;
   
   }
 }
@@ -197,7 +197,7 @@ body {
 }
 
 #reload{
-  background: #a71818;
+  background: rgb(50, 168, 66);
   color: white;
   border-radius: 15px;
   padding-left:10px;

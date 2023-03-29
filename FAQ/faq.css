@@ -1,5 +1,4 @@
-body p, li{
-  font-size:18px;
+body {
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -114,7 +113,9 @@ color: #1bbc9b;
   z-index: 10000000;
 }
 /*---------HAMBURGER MENU ENDS HERE---------------*/
-
+.accordion-body{
+  font-size: 18px;
+}
 
 
 

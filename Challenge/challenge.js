@@ -173,69 +173,88 @@ const quizData = [
           },
 ];
 
-const quiz = document.getElementById('quiz')
-const answerEls = document.querySelectorAll('.answer')
-const questionEl = document.getElementById('question')
-const a_text = document.getElementById('a_text')
-const b_text = document.getElementById('b_text')
-const c_text = document.getElementById('c_text')
-const d_text = document.getElementById('d_text')
-const submitBtn = document.getElementById('submit')
+const quiz = document.getElementById('quiz');
+const answerEls = document.querySelectorAll('.answer');
+const questionEl = document.getElementById('question');
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+const submitBtn = document.getElementById('submit');
+const reloadBtn = document.getElementById('reload');
 
-let currentQuiz = 0
-let score = 0
+let currentQuiz = 0;
+let score = 0;
 
-loadQuiz()
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+let shuffledQuizData = shuffle(quizData);
+
+loadQuiz();
 
 function loadQuiz() {
-    deselectAnswers()
+  deselectAnswers();
 
-    const currentQuizData = quizData[currentQuiz]
+  const currentQuizData = shuffledQuizData[currentQuiz];
 
-    questionEl.innerText = currentQuizData.question
-    a_text.innerText = currentQuizData.a
-    b_text.innerText = currentQuizData.b
-    c_text.innerText = currentQuizData.c
-    d_text.innerText = currentQuizData.d
+  questionEl.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
 }
 
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+  answerEls.forEach((answerEl) => (answerEl.checked = false));
 }
 
 function getSelected() {
-    let answer
+  let answer;
 
-    answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
-            answer = answerEl.id
-        }
-    })
+  answerEls.forEach((answerEl) => {
+    if (answerEl.checked) {
+      answer = answerEl.id;
+    }
+  });
 
-    return answer
+  return answer;
 }
 
 submitBtn.addEventListener('click', () => {
-    const answer = getSelected()
-    
-    if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
-            score++
-        }
+  const answer = getSelected();
 
-        currentQuiz++
+  if (answer) {
+    if (answer === shuffledQuizData[currentQuiz].correct) {
+      score++;
+    }
 
-        if(currentQuiz < quizData.length) {
-            loadQuiz()
-        } else {
-            quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+    currentQuiz++;
+
+    if (currentQuiz < shuffledQuizData.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+                <h2>You answered ${score}/${shuffledQuizData.length} questions correctly</h2>
 
                 <button id="reload" onclick="location.reload()">Try Again!</button>
-            `
-        }
+            `;
+      reloadBtn.addEventListener('click', () => {
+        currentQuiz = 0;
+        score = 0;
+        shuffledQuizData = shuffle(quizData);
+        loadQuiz();
+      });
     }
-})
+  }
+});
+
+
 
 
 
