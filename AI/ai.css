@@ -6,15 +6,6 @@ mark {
   background-color: #FFFFC2;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 576px) {
-    #ads{
-      width:0%;
-    }
-    .col-9{
-      width:98%;
-    }
-  }
-
 /*---------HAMBURGER MENU---------------*/
 .nav-btn {
   border: none;

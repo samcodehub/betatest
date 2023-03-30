@@ -24,7 +24,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   
 // Reference messages collection
-var messagesRef1 = firebase.database().ref('aimessages');
+var messagesRef1 = firebase.database().ref('numpymessages');
   
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);

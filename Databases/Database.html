@@ -88,15 +88,13 @@
 
                     <p>Once the package is installed, you can connect to a MySQL server and interact with the database using the mysql.connector module.</p> <p>Here is an example of how to connect to a MySQL server and execute a simple SELECT statement:</p>
 <div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
-            
 <pre>
 <code class="language-Python">            
 import mysql.connector
 
 # Connect to the database
-cnx = mysql.connector.connect(user='your_username', password='your_password',
-                                                      host='your_host',
-                                                      database='your_database')
+cnx = mysql.connector.connect(user=\'your_username\', password=\'your_password\', host=\'your_host\', database=\'your_database\')
+
                         
 #Create a cursor object
 cursor = cnx.cursor()
@@ -112,7 +110,7 @@ print(result)
                         
 # Close the cursor and connection
 cursor.close()
-cnx.close()</p>                      
+cnx.close()                      
 </code>
 </pre>
 <button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
@@ -258,9 +256,9 @@ connection.close()
 </div>
                                     </li>
                                   <li class="mt-3">Insert data:<br/>
-<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<div id="code-container" class="bg-dark text-white pt-3 ps-3 pe-3">
 <pre>
-<code class="language-Python">cursor.execute("INSERT INTO users (name) VALUES ('John Doe')")                          
+<code class="language-Python">cursor.execute("INSERT INTO users (name) VALUES (&apos;John Doe&apos;)")                          
 </code>
 </pre>
 <button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
@@ -276,7 +274,7 @@ connection.close()
 </div>                                    
                                     </li>
                                   <li class="mt-3">Close the connection:<br/>
-<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<div id="code-container" class="bg-dark text-white pt-3 ps-3 pe-3">
 <pre>
 <code class="language-Python">conn.close()                          
 </code>
@@ -297,11 +295,11 @@ connection.close()
 
                                 <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
                                 <h3 class="mt-5">Here is an example of using sqlite3 in python tkinter contact management App</h3>
-                                <p>*You can learn about tkinter framework in tkinter section in homepage.</p>
+                                <p class="mt-4">*You can learn about tkinter framework in tkinter section in homepage.</p>
                                 <p>Now we will code step by step a contact management app that uses our internal storage to save our contact's data.</p>
                                 <p>When we run the app for the first time, it will create a db file as our database file.</p>
-                                <h5>Let's code...</h5>
-                                <p>Importing the modules and arranging our app window :</p>
+                                <h5 class="mt-5">Let's code...</h5>
+                                <p class="mt-3">Importing the modules and arranging our app window :</p>
 <div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
 <pre>
 <code class="language-Python">import tkinter
@@ -717,7 +715,7 @@ tree.column('#6', stretch=NO, minwidth=0, width=30)
 tree.column('#7', stretch=NO, minwidth=0, width=120)
 
 tree.pack()
-tree.bind('<Double-Button-1>', UpdateContact)                          
+tree.bind('&lt;Double-Button-1&gt;', UpdateContact)                         
 </code>
 </pre>
 <button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
@@ -735,7 +733,7 @@ root.mainloop()
 </pre>
 <button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
 </div>            
-            <h5>That's all...!!!</h5>
+            <h5 class="mt-5">That's all...!!!</h5>
             <p>You can watch the working app video here :</p>
             <div class="ratio ratio-16x9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ociFcZhAklc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

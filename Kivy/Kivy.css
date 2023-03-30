@@ -3,8 +3,9 @@ body p, li{
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 mark {
-  background-color: rgb(250, 250, 145);
+  background-color: #FFFFC2;
   }
+
 /*---------HAMBURGER MENU---------------*/
 .nav-btn {
   border: none;
@@ -136,7 +137,7 @@ color: #1bbc9b;
   background: #00000027;
 }
 .card{
-  background: #fffccd;
+  background: #FFFFC2;
   margin-top: 15px;
   border-radius: 0px 50px 0px;
   border: 2px solid #00000071;
