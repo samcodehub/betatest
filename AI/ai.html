@@ -731,6 +731,70 @@ print("finished!")
 <div class="ratio ratio-16x9 mt-3">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/-O3fu4nZleM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
+<!--WRITE ON IMAGE---###############################################################################-->
+<h2 class="mt-5">How to write text on solid image using Python Numpy and Opencv(cv2) package</h2>
+
+<p class="mt-5">First, the NumPy library is imported as "np" and the OpenCV library is imported as "cv2".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np
+import cv2
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">A black image is created using NumPy with 3 channels RGB and unsigned integer datatype. The dimensions of the image are (400, 400, 3).</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">img = np.zeros((400, 400, 3), dtype = "uint8")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>cv2.putText()</strong> function is used to write text on the image. The text is "sam codehub presents..." and it is positioned at (50, 50) on the image. The font used is <strong>FONT_HERSHEY_SIMPLEX</strong> with a size of 0.8 and the color of the text is green (0, 255, 0). The thickness of the text is set to 2 and the line type is <strong>LINE_AA</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img, 'sam codehub presents...', (50, 50), font, 0.8, (0, 255, 0), 2, cv2.LINE_AA)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">The <strong>cv2.imshow()</strong> function is used to display the image in a window named "dark".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.imshow('dark', img)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>cv2.waitKey()</strong> function waits for a keyboard event and the <strong>cv2.destroyAllWindows()</strong> function closes all windows.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.waitKey(0)
+cv2.destroyAllWindows()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1qM5gCZ6_UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 <!--PANDAS LIBRARY----##################################################################################-->
 <div class="mt-5 rounded border border-5" style="height: 100px; width: 100%;"></div>
 <h2 class="mt-5">How to install and use Pandas in Python?</h2>
