@@ -1,11 +1,16 @@
 body p, li{
   font-size:18px;
+  line-height: 1.8;
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 mark {
   background-color: #FFFFC2;
   }
-
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    .col-9{
+      padding-left: 0px;
+     }
+  }
 /*---------HAMBURGER MENU---------------*/
 .nav-btn {
   border: none;
@@ -80,11 +85,9 @@ mark {
   text-transform: uppercase;
   
 }
-
 .list li a:hover {
 color: #1bbc9b;   
 }
-
 .list ul {
   list-style-type: none;
   padding-left: 20px;
@@ -117,7 +120,6 @@ color: #1bbc9b;
   z-index: 10000000;
 }
 /*---------HAMBURGER MENU ENDS HERE---------------*/
-
 /*-----------------CODE CONTAINER---------------*/
 #code-container{
   border-radius: 5px;
@@ -129,6 +131,18 @@ color: #1bbc9b;
   position: absolute;
   right: 18px;
   top: 18px;
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  #code-container{
+    font-size: 14px;
+  }
+  #copy{
+    font-size: 16px;
+    right: 2px;
+    top: -2px; 
+    border: none;
+    padding:0px;
+  }
 }
 /*-----------------CODE CONTAINER ENDS HERE---------------*/
 
@@ -146,8 +160,6 @@ color: #1bbc9b;
   color:#0a0a0ad5;
 }
 /*-----------------COMMENTS AREA ENDS HERE---------------*/
-
-
 /*---------FOOTER---------------*/ 
 .futer{
   background: linear-gradient(60deg, rgb(56, 0, 32) 0%, rgb(13, 1, 62) 100%);  
@@ -189,8 +201,6 @@ color: #1bbc9b;
   background-color: #dcdcdc;
   color: #ffffff;
 }
-
-
 .alert {
   display: inline-block;
   font-size: 22px;
@@ -199,5 +209,8 @@ color: #1bbc9b;
   margin-bottom: 5px;
 }
 /*---------FOOTER ENDS HERE---------------*/
-
+.ad-container {
+  margin: 1rem auto;
+  max-width: 728px;
+}
 
